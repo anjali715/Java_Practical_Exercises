@@ -1,0 +1,17 @@
+import java.util.*;
+package Pe3;
+
+
+public class memberVariable {
+	public static void main(String[] args)
+	{
+		
+	}
+
+}
+
+class member{
+	String name;
+	int age;
+	
+}

@@ -1,0 +1,34 @@
+
+import java.util.*;
+
+
+
+public class palindrome {
+	
+	public static void checkPal(String orig) {
+		
+		String reverse=" ";
+		for ( int i = orig.length() - 1 ; i >= 0 ; i-- )
+	         reverse = reverse + orig.charAt(i);;
+		
+	     if (reverse==orig)
+	    	System.out.println(orig+" is a palindrome."); 
+	     else
+	    	 System.out.println(orig+" is not a palindrome.");
+		   
+	}
+	
+	
+	public static void main(String[] args) {
+	
+	Scanner scan = new Scanner(System.in);  
+	System.out.println("Enter a number: ");
+	String n = scan.nextLine();
+	
+	
+	checkPal(n);
+	
+	
+	
+}
+}
