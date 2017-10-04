@@ -1,5 +1,10 @@
 import java.io.*;
 
+/*
+ *  Write a program to read the content of a text file, convert the content in upper case and print.
+the same in console along with the length of the file. 
+*/
+
 public class FileRead {
 	public static void main(String[] args) throws Exception {
 

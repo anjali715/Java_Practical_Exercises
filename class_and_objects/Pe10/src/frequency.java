@@ -1,24 +1,26 @@
 import java.io.*;
 import java.util.*;
 
+//Write a program to calculate the frequency of the words in a given file.
+
 class frequency {
 	public static void main(String args[]) throws Exception {
-		
-		int ch,i=0;
+
+		int ch, i = 0;
 		String str;
 		str = "/home/anjali/example/abc.txt";
-		
+
 		HashMap map = new HashMap();
 		HashSet set = new HashSet();
-		
+
 		FileInputStream fis = new FileInputStream(str);
-		
-		String string = new String();	
-		
+
+		String string = new String();
+
 		while ((ch = fis.read()) != -1) {
 			string += (char) ch;
 		}
-		
+
 		StringTokenizer st = new StringTokenizer(string);
 		while (st.hasMoreTokens()) {
 			String s = st.nextToken();
@@ -26,7 +28,7 @@ class frequency {
 			set.add(s);
 			i++;
 		}
-		
+
 		System.out.println("Word Count:");
 		Iterator iter = set.iterator();
 		while (iter.hasNext()) {

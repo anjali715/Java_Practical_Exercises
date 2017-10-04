@@ -1,5 +1,7 @@
 import java.util.*;
 
+//Write a Java method to check if a given number is power of 4 
+
 public class powerOf4 {
 
 	public static boolean check(int n) {
@@ -9,8 +11,7 @@ public class powerOf4 {
 				n = n / 4;
 				if (n == 1)
 					return true;
-			} 
-			else
+			} else
 				return false;
 		}
 		return false;
